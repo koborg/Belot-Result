@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Results</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>Резултат</h1>
+		<div class="scores">
+			<span>Отбор A: </span><span id="gameScoreA">0</span>
+			<br>
+			<span>Отбор B: </span><span id="gameScoreB">0</span>
+		</div>
+		<span class="btn start" id="startGame">Старт на играта</span>
+		<form name="addTeams" id="addTeams">
+			<div class="team">
+				<span class="team-label">Отбор A</span>
+				<input type="text" id="teamA-playerOne" placeholder="Player Name 1" value="Краси">
+				<input type="text" id="teamA-playerTwo" placeholder="Player Name 2" value="Пешо">
+			</div>
+			<div class="team">
+				<span class="team-label">Отбор B</span>
+				<input type="text" id="teamB-playerOne" placeholder="Player Name 1" value="Лъчо">
+				<input type="text" id="teamB-playerTwo" placeholder="Player Name 2" value="Адашката">
+			</div>
+			<span id="register" class="btn register">Въведи имената</span>
+		</form>
+		<div class="table-holder">
+			<table>
+				<thead>
+					<tr>
+						<th>Отбор А</th>
+						<th>Отбор B</th>
+					</tr>
+					<tr>
+						<th id="teamA"></th>
+						<th id="teamB"></th>
+					</tr>
+					<tbody>
+
+					</tbody>
+				</thead>
+			</table>
+			<input type="number" min="0" id="addResult-A" placeholder="Резултат от раздаването за отбор А">
+			<input type="number" min="0" id="addResult-B" placeholder="Резултат от раздаването за отбор B">
+			<span class="btn" id="enter">Въведи резултатите</span>
+		</div>
+
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>
